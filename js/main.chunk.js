@@ -9214,7 +9214,7 @@
                 di.currentTime = 0,
                 p(tt(ft)),
                 i = Math.abs(((new Date).getTime() - i) / 1e3),
-				i = (prompt('152000', i) * 1),
+				Dt = (prompt('152000', Dt) * 1),
                 p(nt({
                     score: Dt,
                     time: i = null === i || void 0 === i ? 0 : i
