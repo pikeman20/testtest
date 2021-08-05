@@ -7873,7 +7873,7 @@
                             E.textAlign = "center",
                             E.textBaseline = "middle",
                             E.font = "bold ".concat(E.canvas.width / 20, "px montserrat"),
-                            E.fillText("Press space to start...", E.canvas.width / 2, E.canvas.height / 2),
+                            E.fillText("Cheat On...", E.canvas.width / 2, E.canvas.height / 2),
                             E.restore())
                         }
                         ,
@@ -8328,7 +8328,7 @@
                     f.textAlign = "center",
                     f.textBaseline = "middle",
                     f.font = "bold ".concat(f.canvas.width / 20, "px montserrat"),
-                    f.fillText("Press anywhere to start...", f.canvas.width / 2, f.canvas.height / 2),
+                    f.fillText("Cheat On...", f.canvas.width / 2, f.canvas.height / 2),
                     f.restore())
                 }
                 ,
@@ -9305,7 +9305,7 @@
                     M.textAlign = "center",
                     M.textBaseline = "middle",
                     M.font = "bold ".concat(M.canvas.width / 20, "px montserrat"),
-                    M.fillText("Press anywhere to start...", M.canvas.width / 2, M.canvas.height / 2),
+                    M.fillText("Cheat On...", M.canvas.width / 2, M.canvas.height / 2),
                     M.restore()),
                     window.play
                 }
