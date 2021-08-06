@@ -8205,7 +8205,7 @@
                     e.globalAlpha = this.alpha,
                     Ae(this.tileImage, e, this.x, this.y, 2 * this.w, 2 * this.h),
                     e.restore()) : (e.save(),
-                    this.isBomb && t ? (e.fillStyle = "#178d7c",
+                    this.isBomb ? (e.fillStyle = "#178d7c",
                     e.strokeStyle = "#178d7c",
                     e.lineWidth = 3,
                     e.fillRect(this.x, this.y, 2 * this.w, 2 * this.h),
