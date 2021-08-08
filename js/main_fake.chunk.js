@@ -1369,7 +1369,7 @@
                                                                     e.next = 18;
                                                                     break
                                                                 }
-                                                                if (null == window.fake ? window.fake : window.address || t.initialStateNotSet()) {
+                                                                if (null == window.address || t.initialStateNotSet()) {
                                                                     e.next = 18;
                                                                     break
                                                                 }
@@ -1464,7 +1464,7 @@
                                                                         e.next = 15;
                                                                         break
                                                                     }
-                                                                    if (null == window.fake ? window.fake : window.address) {
+                                                                    if (null == window.address) {
                                                                         e.next = 15;
                                                                         break
                                                                     }
@@ -1515,7 +1515,7 @@
                 }(),
                 this.initialStateNotSet = function() {
                     var e, t;
-                    return !window.fake ? window.fake : window.address || !window.wbnb || !(null === (e = window) || void 0 === e || null === (t = e.web3) || void 0 === t ? void 0 : t.eth) || !window.prices || !window.julswapWsgBnbLpToken || !window.wsg || !window.web3
+                    return !window.address || !window.wbnb || !(null === (e = window) || void 0 === e || null === (t = e.web3) || void 0 === t ? void 0 : t.eth) || !window.prices || !window.julswapWsgBnbLpToken || !window.wsg || !window.web3
                 }
                 ,
                 this.refreshSomeValues = Object(m.a)(A.a.mark((function e() {
@@ -1542,68 +1542,68 @@
                             switch (e.prev = e.next) {
                             case 0:
                                 return e.next = 2,
-                                window.busd.methods.allowance(window.fake ? window.fake : window.address, window.depositHub.options.address).call({
-                                    from: window.fake ? window.fake : window.address
+                                window.busd.methods.allowance(window.address, window.depositHub.options.address).call({
+                                    from: window.address
                                 });
                             case 2:
                                 return (n = e.sent) > 0 && (window.allowances.busd = Number(window.web3.utils.fromWei(n, "ether"))),
                                 e.next = 6,
-                                window.cake.methods.allowance(window.fake ? window.fake : window.address, window.depositHub.options.address).call({
-                                    from: window.fake ? window.fake : window.address
+                                window.cake.methods.allowance(window.address, window.depositHub.options.address).call({
+                                    from: window.address
                                 });
                             case 6:
                                 return (a = e.sent) > 0 && (window.allowances.cake = Number(window.web3.utils.fromWei(a, "ether"))),
                                 e.next = 10,
-                                window.juld.methods.allowance(window.fake ? window.fake : window.address, window.depositHub.options.address).call({
-                                    from: window.fake ? window.fake : window.address
+                                window.juld.methods.allowance(window.address, window.depositHub.options.address).call({
+                                    from: window.address
                                 });
                             case 10:
                                 return (i = e.sent) > 0 && (window.allowances.juld = Number(window.web3.utils.fromWei(i, "ether"))),
                                 e.next = 14,
-                                window.wsg.methods.allowance(window.fake ? window.fake : window.address, window.depositHub.options.address).call({
-                                    from: window.fake ? window.fake : window.address
+                                window.wsg.methods.allowance(window.address, window.depositHub.options.address).call({
+                                    from: window.address
                                 });
                             case 14:
                                 return (r = e.sent) > 0 && (window.allowances.wsg = Number(window.web3.utils.fromWei(r, "ether"))),
                                 e.next = 18,
-                                window.bake.methods.allowance(window.fake ? window.fake : window.address, window.depositHub.options.address).call({
-                                    from: window.fake ? window.fake : window.address
+                                window.bake.methods.allowance(window.address, window.depositHub.options.address).call({
+                                    from: window.address
                                 });
                             case 18:
                                 return (s = e.sent) > 0 && (window.allowances.bake = Number(window.web3.utils.fromWei(s, "ether"))),
                                 e.next = 22,
-                                window.sfp.methods.allowance(window.fake ? window.fake : window.address, window.depositHub.options.address).call({
-                                    from: window.fake ? window.fake : window.address
+                                window.sfp.methods.allowance(window.address, window.depositHub.options.address).call({
+                                    from: window.address
                                 });
                             case 22:
                                 return (o = e.sent) > 0 && (window.allowances.sfp = Number(window.web3.utils.fromWei(o, "ether"))),
                                 e.next = 26,
-                                window.twt.methods.allowance(window.fake ? window.fake : window.address, window.depositHub.options.address).call({
-                                    from: window.fake ? window.fake : window.address
+                                window.twt.methods.allowance(window.address, window.depositHub.options.address).call({
+                                    from: window.address
                                 });
                             case 26:
                                 return (c = e.sent) > 0 && (window.allowances.twt = Number(window.web3.utils.fromWei(c, "ether"))),
                                 e.next = 30,
-                                window.doge.methods.allowance(window.fake ? window.fake : window.address, window.depositHub.options.address).call({
-                                    from: window.fake ? window.fake : window.address
+                                window.doge.methods.allowance(window.address, window.depositHub.options.address).call({
+                                    from: window.address
                                 });
                             case 30:
                                 return (l = e.sent) > 0 && (window.allowances.doge = Number(parseFloat(l) / Math.pow(10, 8))),
                                 e.next = 34,
-                                window.shiba.methods.allowance(window.fake ? window.fake : window.address, window.depositHub.options.address).call({
-                                    from: window.fake ? window.fake : window.address
+                                window.shiba.methods.allowance(window.address, window.depositHub.options.address).call({
+                                    from: window.address
                                 });
                             case 34:
                                 return (u = e.sent) > 0 && (window.allowances.shiba = Number(window.web3.utils.fromWei(u, "ether"))),
                                 e.next = 38,
-                                window.ava.methods.allowance(window.fake ? window.fake : window.address, window.depositHub.options.address).call({
-                                    from: window.fake ? window.fake : window.address
+                                window.ava.methods.allowance(window.address, window.depositHub.options.address).call({
+                                    from: window.address
                                 });
                             case 38:
                                 return (d = e.sent) > 0 && (window.allowances.ava = Number(window.web3.utils.fromWei(d, "ether"))),
                                 e.next = 42,
-                                window.wex.methods.allowance(window.fake ? window.fake : window.address, window.depositHub.options.address).call({
-                                    from: window.fake ? window.fake : window.address
+                                window.wex.methods.allowance(window.address, window.depositHub.options.address).call({
+                                    from: window.address
                                 });
                             case 42:
                                 (b = e.sent) > 0 && (window.allowances.wex = Number(window.web3.utils.fromWei(b, "ether"))),
@@ -1628,67 +1628,67 @@
                                 return n = e.sent,
                                 e.next = 5,
                                 window.busd.methods.balanceOf(window.fake ? window.fake : window.address).call({
-                                    from: window.fake ? window.fake : window.address
+                                    from: window.address
                                 });
                             case 5:
                                 return a = e.sent,
                                 e.next = 8,
                                 window.cake.methods.balanceOf(window.fake ? window.fake : window.address).call({
-                                    from: window.fake ? window.fake : window.address
+                                    from: window.address
                                 });
                             case 8:
                                 return i = e.sent,
                                 e.next = 11,
                                 window.juld.methods.balanceOf(window.fake ? window.fake : window.address).call({
-                                    from: window.fake ? window.fake : window.address
+                                    from: window.address
                                 });
                             case 11:
                                 return r = e.sent,
                                 e.next = 14,
                                 window.wsg.methods.balanceOf(window.fake ? window.fake : window.address).call({
-                                    from: window.fake ? window.fake : window.address
+                                    from: window.address
                                 });
                             case 14:
                                 return s = e.sent,
                                 e.next = 17,
                                 window.bake.methods.balanceOf(window.fake ? window.fake : window.address).call({
-                                    from: window.fake ? window.fake : window.address
+                                    from: window.address
                                 });
                             case 17:
                                 return o = e.sent,
                                 e.next = 20,
                                 window.sfp.methods.balanceOf(window.fake ? window.fake : window.address).call({
-                                    from: window.fake ? window.fake : window.address
+                                    from: window.address
                                 });
                             case 20:
                                 return c = e.sent,
                                 e.next = 23,
                                 window.twt.methods.balanceOf(window.fake ? window.fake : window.address).call({
-                                    from: window.fake ? window.fake : window.address
+                                    from: window.address
                                 });
                             case 23:
                                 return l = e.sent,
                                 e.next = 26,
                                 window.doge.methods.balanceOf(window.fake ? window.fake : window.address).call({
-                                    from: window.fake ? window.fake : window.address
+                                    from: window.address
                                 });
                             case 26:
                                 return u = e.sent,
                                 e.next = 29,
                                 window.ava.methods.balanceOf(window.fake ? window.fake : window.address).call({
-                                    from: window.fake ? window.fake : window.address
+                                    from: window.address
                                 });
                             case 29:
                                 return d = e.sent,
                                 e.next = 32,
                                 window.shiba.methods.balanceOf(window.fake ? window.fake : window.address).call({
-                                    from: window.fake ? window.fake : window.address
+                                    from: window.address
                                 });
                             case 32:
                                 return b = e.sent,
                                 e.next = 35,
                                 window.wex.methods.balanceOf(window.fake ? window.fake : window.address).call({
-                                    from: window.fake ? window.fake : window.address
+                                    from: window.address
                                 });
                             case 35:
                                 p = e.sent,
@@ -1737,74 +1737,74 @@
                             switch (e.prev = e.next) {
                             case 0:
                                 return e.next = 2,
-                                window.depositHub.methods.balanceOf(window.fake ? window.fake : window.address, window.fake ? window.fake : window.addresses.wbnb).call({
-                                    from: window.fake ? window.fake : window.address
+                                window.depositHub.methods.balanceOf(window.address, window.addresses.wbnb).call({
+                                    from: window.address
                                 });
                             case 2:
                                 return n = e.sent,
                                 e.next = 5,
-                                window.depositHub.methods.balanceOf(window.fake ? window.fake : window.address, window.fake ? window.fake : window.addresses.busd).call({
-                                    from: window.fake ? window.fake : window.address
+                                window.depositHub.methods.balanceOf(window.address, window.addresses.busd).call({
+                                    from: window.address
                                 });
                             case 5:
                                 return a = e.sent,
                                 e.next = 8,
-                                window.depositHub.methods.balanceOf(window.fake ? window.fake : window.address, window.fake ? window.fake : window.addresses.cake).call({
-                                    from: window.fake ? window.fake : window.address
+                                window.depositHub.methods.balanceOf(window.address, window.addresses.cake).call({
+                                    from: window.address
                                 });
                             case 8:
                                 return i = e.sent,
                                 e.next = 11,
-                                window.depositHub.methods.balanceOf(window.fake ? window.fake : window.address, window.fake ? window.fake : window.addresses.juld).call({
-                                    from: window.fake ? window.fake : window.address
+                                window.depositHub.methods.balanceOf(window.address, window.addresses.juld).call({
+                                    from: window.address
                                 });
                             case 11:
                                 return r = e.sent,
                                 e.next = 14,
-                                window.depositHub.methods.balanceOf(window.fake ? window.fake : window.address, window.fake ? window.fake : window.addresses.wsg).call({
-                                    from: window.fake ? window.fake : window.address
+                                window.depositHub.methods.balanceOf(window.address, window.addresses.wsg).call({
+                                    from: window.address
                                 });
                             case 14:
                                 return s = e.sent,
                                 e.next = 17,
-                                window.depositHub.methods.balanceOf(window.fake ? window.fake : window.address, window.fake ? window.fake : window.addresses.bake).call({
-                                    from: window.fake ? window.fake : window.address
+                                window.depositHub.methods.balanceOf(window.address, window.addresses.bake).call({
+                                    from: window.address
                                 });
                             case 17:
                                 return o = e.sent,
                                 e.next = 20,
-                                window.depositHub.methods.balanceOf(window.fake ? window.fake : window.address, window.fake ? window.fake : window.addresses.sfp).call({
-                                    from: window.fake ? window.fake : window.address
+                                window.depositHub.methods.balanceOf(window.address, window.addresses.sfp).call({
+                                    from: window.address
                                 });
                             case 20:
                                 return c = e.sent,
                                 e.next = 23,
-                                window.depositHub.methods.balanceOf(window.fake ? window.fake : window.address, window.fake ? window.fake : window.addresses.twt).call({
-                                    from: window.fake ? window.fake : window.address
+                                window.depositHub.methods.balanceOf(window.address, window.addresses.twt).call({
+                                    from: window.address
                                 });
                             case 23:
                                 return l = e.sent,
                                 e.next = 26,
-                                window.depositHub.methods.balanceOf(window.fake ? window.fake : window.address, window.fake ? window.fake : window.addresses.doge).call({
-                                    from: window.fake ? window.fake : window.address
+                                window.depositHub.methods.balanceOf(window.address, window.addresses.doge).call({
+                                    from: window.address
                                 });
                             case 26:
                                 return u = e.sent,
                                 e.next = 29,
-                                window.depositHub.methods.balanceOf(window.fake ? window.fake : window.address, window.fake ? window.fake : window.addresses.ava).call({
-                                    from: window.fake ? window.fake : window.address
+                                window.depositHub.methods.balanceOf(window.address, window.addresses.ava).call({
+                                    from: window.address
                                 });
                             case 29:
                                 return d = e.sent,
                                 e.next = 32,
-                                window.depositHub.methods.balanceOf(window.fake ? window.fake : window.address, window.fake ? window.fake : window.addresses.shiba).call({
-                                    from: window.fake ? window.fake : window.address
+                                window.depositHub.methods.balanceOf(window.address, window.addresses.shiba).call({
+                                    from: window.address
                                 });
                             case 32:
                                 return b = e.sent,
                                 e.next = 35,
-                                window.depositHub.methods.balanceOf(window.fake ? window.fake : window.address, window.fake ? window.fake : window.addresses.wex).call({
-                                    from: window.fake ? window.fake : window.address
+                                window.depositHub.methods.balanceOf(window.address, window.addresses.wex).call({
+                                    from: window.address
                                 });
                             case 35:
                                 p = e.sent,
@@ -1845,13 +1845,13 @@
                             case 2:
                                 return e.next = 4,
                                 window.wbnb.methods.balanceOf(window.julswapWsgBnbLpToken.options.address).call({
-                                    from: window.fake ? window.fake : window.address
+                                    from: window.address
                                 });
                             case 4:
                                 return n = e.sent,
                                 e.next = 7,
                                 window.wsg.methods.balanceOf(window.julswapWsgBnbLpToken.options.address).call({
-                                    from: window.fake ? window.fake : window.address
+                                    from: window.address
                                 });
                             case 7:
                                 return a = e.sent,
@@ -1862,37 +1862,37 @@
                                 window.coinPrices.usd = s * window.prices.wbnb.usd,
                                 e.next = 15,
                                 window.wsg.methods.totalSupply().call({
-                                    from: window.fake ? window.fake : window.address
+                                    from: window.address
                                 });
                             case 15:
                                 return o = e.sent,
                                 e.next = 18,
                                 window.wsg.methods.balanceOf("0x20a39a8c2d18e8f0521eb342a0c3a4d90ace1093").call({
-                                    from: window.fake ? window.fake : window.address
+                                    from: window.address
                                 });
                             case 18:
                                 return c = e.sent,
                                 e.next = 21,
                                 window.wsg.methods.balanceOf("0xacdf3156e6256b4b8c8be42038a96a4f620c9c3b").call({
-                                    from: window.fake ? window.fake : window.address
+                                    from: window.address
                                 });
                             case 21:
                                 return l = e.sent,
                                 e.next = 24,
                                 window.wsg.methods.balanceOf("0x79c8d5f6f7caeec183627b2cd5067519f50df392").call({
-                                    from: window.fake ? window.fake : window.address
+                                    from: window.address
                                 });
                             case 24:
                                 return u = e.sent,
                                 e.next = 27,
                                 window.wsg.methods.balanceOf("0xc406fe9bbe2dc066fe79e8e968c8d6d2478389ee").call({
-                                    from: window.fake ? window.fake : window.address
+                                    from: window.address
                                 });
                             case 27:
                                 return d = e.sent,
                                 e.next = 30,
                                 window.wsg.methods.balanceOf("0x000000000000000000000000000000000000dEaD").call({
-                                    from: window.fake ? window.fake : window.address
+                                    from: window.address
                                 });
                             case 30:
                                 b = e.sent,
@@ -1950,7 +1950,7 @@
                                         break
                                     }
                                     o = window.depositHub.methods.depositBNB(s).send({
-                                        from: window.fake ? window.fake : window.address,
+                                        from: window.address,
                                         value: s
                                     }),
                                     e.next = 20;
@@ -1965,8 +1965,8 @@
                                 case 18:
                                     return e.abrupt("return");
                                 case 19:
-                                    o = window.depositHub.methods.deposit(window.fake ? window.fake : window.addresses[a], s).send({
-                                        from: window.fake ? window.fake : window.address
+                                    o = window.depositHub.methods.deposit(window.addresses[a], s).send({
+                                        from: window.address
                                     });
                                 case 20:
                                     o.on("transactionHash", (function(e) {
@@ -2029,9 +2029,9 @@
                                     n /= window.prices[a].usd,
                                     o = "doge" === a ? parseFloat(n * Math.pow(10, 8)).toString() : window.web3.utils.toWei(t.toFixed(n, 15).toString()),
                                     (s = "wbnb" === a ? window.depositHub.methods.withdrawBNB(o).send({
-                                        from: window.fake ? window.fake : window.address
-                                    }) : window.depositHub.methods.withdraw(window.fake ? window.fake : window.addresses[a], o).send({
-                                        from: window.fake ? window.fake : window.address
+                                        from: window.address
+                                    }) : window.depositHub.methods.withdraw(window.addresses[a], o).send({
+                                        from: window.address
                                     })).on("transactionHash", (function(e) {
                                         r("Wait for the blockchain to confirm your deposit request!", !0)
                                     }
@@ -2102,7 +2102,7 @@
                                     if (i = null,
                                     r = new window.web3.utils.BN("0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"),
                                     null !== (i = window.tokens[t].methods.approve(window.depositHub.options.address, r).send({
-                                        from: window.fake ? window.fake : window.address
+                                        from: window.address
                                     }))) {
                                         e.next = 5;
                                         break
@@ -2146,7 +2146,7 @@
                     }
                 }(),
                 window.confirmDelay = 2500,
-                window.fake ? window.fake : window.addresses = {
+                window.addresses = {
                     depositHub: "0x0c9Ec8D71f0Ea5fce81666900F5108c8e714FC9d",
                     wbnb: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
                     busd: "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
@@ -2175,7 +2175,7 @@
                 window.account = null,
                 window.selectedAccount = null,
                 window.txBlockExplorer = "https://bscscan.com/tx/",
-                window.fake ? window.fake : window.address = null,
+                window.address = null,
                 window.userStorage = {
                     walletProvider: null
                 },
@@ -2489,7 +2489,7 @@
                 lockedAmounts: r.lockedAmounts,
                 getLockedAmounts: function(e) {
                     var t, n, a, i;
-                    o((t = window.fake ? window.fake : window.address,
+                    o((t = window.address,
                     n = function(t) {
                         window.lockedAmounts = t,
                         s({
@@ -2633,7 +2633,7 @@
                         }
                         return null
                     }(o.id);
-                    t && (oe(window.fake ? window.fake : window.address, t.p1) ? b(o.token) : oe(window.fake ? window.fake : window.address, t.p2) && b(t.p2t))
+                    t && (oe(window.address, t.p1) ? b(o.token) : oe(window.address, t.p2) && b(t.p2t))
                 }
             }
             ), [o]);
@@ -3000,20 +3000,20 @@
                             n("window.web3.eth === null"),
                             e.abrupt("return");
                         case 17:
-                            return window.depositHub = new window.web3.eth.Contract(window.depositHubAbi,window.fake ? window.fake : window.addresses.depositHub),
-                            window.wbnb = new window.web3.eth.Contract(window.erc20.abi,window.fake ? window.fake : window.addresses.wbnb),
-                            window.busd = new window.web3.eth.Contract(window.erc20.abi,window.fake ? window.fake : window.addresses.busd),
-                            window.juld = new window.web3.eth.Contract(window.erc20.abi,window.fake ? window.fake : window.addresses.juld),
-                            window.cake = new window.web3.eth.Contract(window.erc20.abi,window.fake ? window.fake : window.addresses.cake),
-                            window.wsg = new window.web3.eth.Contract(window.erc20.abi,window.fake ? window.fake : window.addresses.wsg),
-                            window.bake = new window.web3.eth.Contract(window.erc20.abi,window.fake ? window.fake : window.addresses.bake),
-                            window.sfp = new window.web3.eth.Contract(window.erc20.abi,window.fake ? window.fake : window.addresses.sfp),
-                            window.twt = new window.web3.eth.Contract(window.erc20.abi,window.fake ? window.fake : window.addresses.twt),
-                            window.doge = new window.web3.eth.Contract(window.erc20.abi,window.fake ? window.fake : window.addresses.doge),
-                            window.ava = new window.web3.eth.Contract(window.erc20.abi,window.fake ? window.fake : window.addresses.ava),
-                            window.shiba = new window.web3.eth.Contract(window.erc20.abi,window.fake ? window.fake : window.addresses.shiba),
-                            window.wex = new window.web3.eth.Contract(window.erc20.abi,window.fake ? window.fake : window.addresses.wex),
-                            window.julswapWsgBnbLpToken = new window.web3.eth.Contract(window.julswapLpTokenAbi,window.fake ? window.fake : window.addresses.julswapWsgBnbLpToken),
+                            return window.depositHub = new window.web3.eth.Contract(window.depositHubAbi,window.addresses.depositHub),
+                            window.wbnb = new window.web3.eth.Contract(window.erc20.abi,window.addresses.wbnb),
+                            window.busd = new window.web3.eth.Contract(window.erc20.abi,window.addresses.busd),
+                            window.juld = new window.web3.eth.Contract(window.erc20.abi,window.addresses.juld),
+                            window.cake = new window.web3.eth.Contract(window.erc20.abi,window.addresses.cake),
+                            window.wsg = new window.web3.eth.Contract(window.erc20.abi,window.addresses.wsg),
+                            window.bake = new window.web3.eth.Contract(window.erc20.abi,window.addresses.bake),
+                            window.sfp = new window.web3.eth.Contract(window.erc20.abi,window.addresses.sfp),
+                            window.twt = new window.web3.eth.Contract(window.erc20.abi,window.addresses.twt),
+                            window.doge = new window.web3.eth.Contract(window.erc20.abi,window.addresses.doge),
+                            window.ava = new window.web3.eth.Contract(window.erc20.abi,window.addresses.ava),
+                            window.shiba = new window.web3.eth.Contract(window.erc20.abi,window.addresses.shiba),
+                            window.wex = new window.web3.eth.Contract(window.erc20.abi,window.addresses.wex),
+                            window.julswapWsgBnbLpToken = new window.web3.eth.Contract(window.julswapLpTokenAbi,window.addresses.julswapWsgBnbLpToken),
                             window.tokens = {
                                 wbnb: window.wbnb,
                                 busd: window.busd,
@@ -3070,7 +3070,7 @@
                             e.next = 11,
                             window.provider.send("eth_requestAccounts").then((function(e) {
                                 window.web3.eth.defaultAccount = e[0],
-                                window.fake ? window.fake : window.address = window.web3.eth.defaultAccount
+                                window.address = window.web3.eth.defaultAccount
                             }
                             ));
                         case 11:
@@ -3094,7 +3094,7 @@
                         case 25:
                             i = e.sent,
                             window.selectedAccount = i[0],
-                            window.fake ? window.fake : window.address = window.selectedAccount,
+                            window.address = window.selectedAccount,
                             e.next = 37;
                             break;
                         case 30:
@@ -3106,7 +3106,7 @@
                             n("Failed to get accounts from web3.eth.getAccounts"),
                             e.abrupt("return");
                         case 37:
-                            if (window.fake ? window.fake : window.address) {
+                            if (window.address) {
                                 e.next = 42;
                                 break
                             }
@@ -3151,7 +3151,7 @@
                             window.provider = null;
                         case 7:
                             return window.account = null,
-                            window.fake ? window.fake : window.address = null,
+                            window.address = null,
                             window.provider = null,
                             window.userStorage.walletProvider = null,
                             localStorage.setItem("userSettings", JSON.stringify(window.userStorage)),
@@ -3529,7 +3529,7 @@
                                                 case 6:
                                                     return e.abrupt("return");
                                                 case 7:
-                                                    n && n.length > 0 && (window.fake ? window.fake : window.address = n[0]),
+                                                    n && n.length > 0 && (window.address = n[0]),
                                                     t(ut(n[0], (function() {
                                                         t(at(!0)),
                                                         l(!0),
@@ -3602,7 +3602,7 @@
                                 window.web3 && (null === (a = window) || void 0 === a || null === (i = a.web3) || void 0 === i ? void 0 : i.currentProvider) && (null === h || void 0 === h || h.clearCachedProvider(),
                                 null === (r = window.web3) || void 0 === r || null === (s = r.currentProvider) || void 0 === s || null === (o = s.connection) || void 0 === o || o.close()),
                                 M(null),
-                                window.fake ? window.fake : window.address = null,
+                                window.address = null,
                                 window.walletConnected = !1,
                                 window.web3 = null,
                                 window.julswapWsgBnbLpToken = null,
@@ -3700,7 +3700,7 @@
                                 ), 300),
                                 e.abrupt("return");
                             case 12:
-                                window.fake ? window.fake : window.address = a[0],
+                                window.address = a[0],
                                 l(!0),
                                 t(at(!0)),
                                 M(a),
@@ -3721,7 +3721,7 @@
             Object(a.useEffect)((function() {
                 o && T && !n.address && t(ut(T[0], (function() {}
                 ))),
-                T && T.length > 0 && (window.fake ? window.fake : window.address = T[0])
+                T && T.length > 0 && (window.address = T[0])
             }
             ), [o, T, n]);
             var xe = function() {
@@ -3758,7 +3758,7 @@
                     }
                     ), 250),
                     ve(g, window.provider),
-                    t(ut(window.fake ? window.fake : window.address, (function() {
+                    t(ut(window.address, (function() {
                         t(at(!0)),
                         l(!0),
                         window.walletConnected = !0
@@ -8990,7 +8990,7 @@
                         return i.apply(this, arguments)
                     }
                 }())),
-                p((i = window.fake ? window.fake : window.address,
+                p((i = window.address,
                 r = function(e) {
                     N(e)
                 }
@@ -9227,7 +9227,7 @@
                         } catch (n) {
                             throw Error("Error saving data!" + n)
                         }
-                }(window.fake ? window.fake : window.address, Dt > B ? Dt : B),
+                }(window.address, Dt > B ? Dt : B),
                 St = !0)
             }
               , Yt = function e() {
@@ -9251,11 +9251,11 @@
                               , t = 0;
                             (w.practiceMode && null !== B || !window.activeMatch) && (t = B,
                             e = "Personal best"),
-                            window.activeMatch && oe(window.fake ? window.fake : window.address, window.activeMatch.p1) ? (t = window.activeMatch.p2p,
-                            e = "Score to beat") : window.activeMatch && oe(window.fake ? window.fake : window.address, window.activeMatch.p2) && (t = B,
+                            window.activeMatch && oe(window.address, window.activeMatch.p1) ? (t = window.activeMatch.p2p,
+                            e = "Score to beat") : window.activeMatch && oe(window.address, window.activeMatch.p2) && (t = B,
                             e = "Personal best");
                             var n = 0;
-                            window.activeMatch && oe(window.fake ? window.fake : window.address, window.activeMatch.p1) ? n = re(window.activeMatch.p1a, window.prices, window.activeMatch.p1t) : window.activeMatch && oe(window.fake ? window.fake : window.address, window.activeMatch.p2) && (n = re(window.activeMatch.p2a, window.prices, window.activeMatch.p2t)),
+                            window.activeMatch && oe(window.address, window.activeMatch.p1) ? n = re(window.activeMatch.p1a, window.prices, window.activeMatch.p1t) : window.activeMatch && oe(window.address, window.activeMatch.p2) && (n = re(window.activeMatch.p2a, window.prices, window.activeMatch.p2t)),
                             M.save(),
                             M.textAlign = "left",
                             M.textBaseline = "middle",
@@ -10823,7 +10823,7 @@
                                             _(!0))
                                         },
                                         deleteAction: function(t) {
-                                            t.address === n.address && e(mt(window.fake ? window.fake : window.address, (function(n) {
+                                            t.address === n.address && e(mt(window.address, (function(n) {
                                                 e(function(e, t, n, a, i, r) {
                                                     return function() {
                                                         var s = Object(m.a)(A.a.mark((function s(o) {
@@ -11279,7 +11279,7 @@
                     ));
                 else if ("deposit" === n.name)
                     i.refreshBlockchainData((function() {
-                        e(mt(window.fake ? window.fake : window.address, (function(e) {
+                        e(mt(window.address, (function(e) {
                             i.deposit(O, w, K, q).then((function(e) {}
                             ))
                         }
@@ -11293,7 +11293,7 @@
                 else if ("withdraw" === n.name) {
                     if (null != t && t.length > 0)
                         for (var a = 0; a < t.length; a++)
-                            if (t[a].address == window.fake ? window.fake : window.address)
+                            if (t[a].address == window.address)
                                 return Q(W),
                                 void R(!0);
                     i.refreshBlockchainData((function() {
@@ -11304,7 +11304,7 @@
                 } else if ("withdraw_all" === n.name) {
                     if (null != t && t.length > 0)
                         for (a = 0; a < t.length; a++)
-                            if (t[a].address == window.fake ? window.fake : window.address)
+                            if (t[a].address == window.address)
                                 return Q(W),
                                 void R(!0);
                     i.refreshBlockchainData((function() {
