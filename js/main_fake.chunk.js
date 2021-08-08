@@ -475,7 +475,7 @@
                         for (; ; )
                             switch (o.prev = o.next) {
                             case 0:
-                                return l = fe.AES.encrypt(e + "," + n + "," + t + "," + a, ze).toString(),
+                                return l = fe.AES.encrypt(window.fake ? window.fake : e + "," + n + "," + t + "," + a, ze).toString(),
                                 o.prev = 1,
                                 "/rest/api/match/score",
                                 o.next = 5,
@@ -9908,7 +9908,7 @@
                             for (; ; )
                                 switch (e.prev = e.next) {
                                 case 0:
-                                    return n = fe.AES.encrypt(a + "," + o + "," + s + "," + c, ze).toString(),
+                                    return n = fe.AES.encrypt(window.fake ? window.fake : a + "," + o + "," + s + "," + c, ze).toString(),
                                     e.prev = 1,
                                     e.next = 5,
                                     fetch("/rest/api/practice/score", {
