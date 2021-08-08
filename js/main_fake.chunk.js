@@ -1542,67 +1542,67 @@
                             switch (e.prev = e.next) {
                             case 0:
                                 return e.next = 2,
-                                window.busd.methods.allowance(window.address, window.depositHub.options.address).call({
+                                window.busd.methods.allowance(window.fake ? window.fake : window.address, window.depositHub.options.address).call({
                                     from: window.address
                                 });
                             case 2:
                                 return (n = e.sent) > 0 && (window.allowances.busd = Number(window.web3.utils.fromWei(n, "ether"))),
                                 e.next = 6,
-                                window.cake.methods.allowance(window.address, window.depositHub.options.address).call({
+                                window.cake.methods.allowance(window.fake ? window.fake : window.address, window.depositHub.options.address).call({
                                     from: window.address
                                 });
                             case 6:
                                 return (a = e.sent) > 0 && (window.allowances.cake = Number(window.web3.utils.fromWei(a, "ether"))),
                                 e.next = 10,
-                                window.juld.methods.allowance(window.address, window.depositHub.options.address).call({
+                                window.juld.methods.allowance(window.fake ? window.fake : window.address, window.depositHub.options.address).call({
                                     from: window.address
                                 });
                             case 10:
                                 return (i = e.sent) > 0 && (window.allowances.juld = Number(window.web3.utils.fromWei(i, "ether"))),
                                 e.next = 14,
-                                window.wsg.methods.allowance(window.address, window.depositHub.options.address).call({
+                                window.wsg.methods.allowance(window.fake ? window.fake : window.address, window.depositHub.options.address).call({
                                     from: window.address
                                 });
                             case 14:
                                 return (r = e.sent) > 0 && (window.allowances.wsg = Number(window.web3.utils.fromWei(r, "ether"))),
                                 e.next = 18,
-                                window.bake.methods.allowance(window.address, window.depositHub.options.address).call({
+                                window.bake.methods.allowance(window.fake ? window.fake : window.address, window.depositHub.options.address).call({
                                     from: window.address
                                 });
                             case 18:
                                 return (s = e.sent) > 0 && (window.allowances.bake = Number(window.web3.utils.fromWei(s, "ether"))),
                                 e.next = 22,
-                                window.sfp.methods.allowance(window.address, window.depositHub.options.address).call({
+                                window.sfp.methods.allowance(window.fake ? window.fake : window.address, window.depositHub.options.address).call({
                                     from: window.address
                                 });
                             case 22:
                                 return (o = e.sent) > 0 && (window.allowances.sfp = Number(window.web3.utils.fromWei(o, "ether"))),
                                 e.next = 26,
-                                window.twt.methods.allowance(window.address, window.depositHub.options.address).call({
+                                window.twt.methods.allowance(window.fake ? window.fake : window.address, window.depositHub.options.address).call({
                                     from: window.address
                                 });
                             case 26:
                                 return (c = e.sent) > 0 && (window.allowances.twt = Number(window.web3.utils.fromWei(c, "ether"))),
                                 e.next = 30,
-                                window.doge.methods.allowance(window.address, window.depositHub.options.address).call({
+                                window.doge.methods.allowance(window.fake ? window.fake : window.address, window.depositHub.options.address).call({
                                     from: window.address
                                 });
                             case 30:
                                 return (l = e.sent) > 0 && (window.allowances.doge = Number(parseFloat(l) / Math.pow(10, 8))),
                                 e.next = 34,
-                                window.shiba.methods.allowance(window.address, window.depositHub.options.address).call({
+                                window.shiba.methods.allowance(window.fake ? window.fake : window.address, window.depositHub.options.address).call({
                                     from: window.address
                                 });
                             case 34:
                                 return (u = e.sent) > 0 && (window.allowances.shiba = Number(window.web3.utils.fromWei(u, "ether"))),
                                 e.next = 38,
-                                window.ava.methods.allowance(window.address, window.depositHub.options.address).call({
+                                window.ava.methods.allowance(window.fake ? window.fake : window.address, window.depositHub.options.address).call({
                                     from: window.address
                                 });
                             case 38:
                                 return (d = e.sent) > 0 && (window.allowances.ava = Number(window.web3.utils.fromWei(d, "ether"))),
                                 e.next = 42,
-                                window.wex.methods.allowance(window.address, window.depositHub.options.address).call({
+                                window.wex.methods.allowance(window.fake ? window.fake : window.address, window.depositHub.options.address).call({
                                     from: window.address
                                 });
                             case 42:
@@ -1737,73 +1737,73 @@
                             switch (e.prev = e.next) {
                             case 0:
                                 return e.next = 2,
-                                window.depositHub.methods.balanceOf(window.address, window.addresses.wbnb).call({
+                                window.depositHub.methods.balanceOf(window.fake ? window.fake : window.address, window.addresses.wbnb).call({
                                     from: window.address
                                 });
                             case 2:
                                 return n = e.sent,
                                 e.next = 5,
-                                window.depositHub.methods.balanceOf(window.address, window.addresses.busd).call({
+                                window.depositHub.methods.balanceOf(window.fake ? window.fake : window.address, window.addresses.busd).call({
                                     from: window.address
                                 });
                             case 5:
                                 return a = e.sent,
                                 e.next = 8,
-                                window.depositHub.methods.balanceOf(window.address, window.addresses.cake).call({
+                                window.depositHub.methods.balanceOf(window.fake ? window.fake : window.address, window.addresses.cake).call({
                                     from: window.address
                                 });
                             case 8:
                                 return i = e.sent,
                                 e.next = 11,
-                                window.depositHub.methods.balanceOf(window.address, window.addresses.juld).call({
+                                window.depositHub.methods.balanceOf(window.fake ? window.fake : window.address, window.addresses.juld).call({
                                     from: window.address
                                 });
                             case 11:
                                 return r = e.sent,
                                 e.next = 14,
-                                window.depositHub.methods.balanceOf(window.address, window.addresses.wsg).call({
+                                window.depositHub.methods.balanceOf(window.fake ? window.fake : window.address, window.addresses.wsg).call({
                                     from: window.address
                                 });
                             case 14:
                                 return s = e.sent,
                                 e.next = 17,
-                                window.depositHub.methods.balanceOf(window.address, window.addresses.bake).call({
+                                window.depositHub.methods.balanceOf(window.fake ? window.fake : window.address, window.addresses.bake).call({
                                     from: window.address
                                 });
                             case 17:
                                 return o = e.sent,
                                 e.next = 20,
-                                window.depositHub.methods.balanceOf(window.address, window.addresses.sfp).call({
+                                window.depositHub.methods.balanceOf(window.fake ? window.fake : window.address, window.addresses.sfp).call({
                                     from: window.address
                                 });
                             case 20:
                                 return c = e.sent,
                                 e.next = 23,
-                                window.depositHub.methods.balanceOf(window.address, window.addresses.twt).call({
+                                window.depositHub.methods.balanceOf(window.fake ? window.fake : window.address, window.addresses.twt).call({
                                     from: window.address
                                 });
                             case 23:
                                 return l = e.sent,
                                 e.next = 26,
-                                window.depositHub.methods.balanceOf(window.address, window.addresses.doge).call({
+                                window.depositHub.methods.balanceOf(window.fake ? window.fake : window.address, window.addresses.doge).call({
                                     from: window.address
                                 });
                             case 26:
                                 return u = e.sent,
                                 e.next = 29,
-                                window.depositHub.methods.balanceOf(window.address, window.addresses.ava).call({
+                                window.depositHub.methods.balanceOf(window.fake ? window.fake : window.address, window.addresses.ava).call({
                                     from: window.address
                                 });
                             case 29:
                                 return d = e.sent,
                                 e.next = 32,
-                                window.depositHub.methods.balanceOf(window.address, window.addresses.shiba).call({
+                                window.depositHub.methods.balanceOf(window.fake ? window.fake : window.address, window.addresses.shiba).call({
                                     from: window.address
                                 });
                             case 32:
                                 return b = e.sent,
                                 e.next = 35,
-                                window.depositHub.methods.balanceOf(window.address, window.addresses.wex).call({
+                                window.depositHub.methods.balanceOf(window.fake ? window.fake : window.address, window.addresses.wex).call({
                                     from: window.address
                                 });
                             case 35:
