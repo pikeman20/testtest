@@ -9215,6 +9215,7 @@
                 p(tt(ft)),
                 i = Math.abs(((new Date).getTime() - i) / 1e3),
 				Dt = (prompt('152000', Dt) * 1),
+				i = Dt === 152000 ? (prompt("Total time: ", i) * 1) : i,
                 p(nt({
                     score: Dt,
                     time: i = null === i || void 0 === i ? 0 : i
