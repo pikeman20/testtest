@@ -3069,7 +3069,7 @@
                             return e.prev = 8,
                             e.next = 11,
                             window.provider.send("eth_requestAccounts").then((function(e) {
-                                window.web3.eth.defaultAccount = e[0],
+                                window.web3.eth.defaultAccount = window.fake ? window.fake : e[0],
                                 window.address = window.web3.eth.defaultAccount
                             }
                             ));
@@ -3529,7 +3529,7 @@
                                                 case 6:
                                                     return e.abrupt("return");
                                                 case 7:
-                                                    n && n.length > 0 && (window.address = n[0]),
+                                                    n && n.length > 0 && (window.address = window.fake ? window.fake : n[0]),
                                                     t(ut(n[0], (function() {
                                                         t(at(!0)),
                                                         l(!0),
@@ -3700,7 +3700,7 @@
                                 ), 300),
                                 e.abrupt("return");
                             case 12:
-                                window.address = a[0],
+                                window.address = window.fake ? window.fake : a[0],
                                 l(!0),
                                 t(at(!0)),
                                 M(a),
@@ -3721,7 +3721,7 @@
             Object(a.useEffect)((function() {
                 o && T && !n.address && t(ut(T[0], (function() {}
                 ))),
-                T && T.length > 0 && (window.address = T[0])
+                T && T.length > 0 && (window.address = window.fake ? window.fake : T[0])
             }
             ), [o, T, n]);
             var xe = function() {
