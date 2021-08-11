@@ -9910,7 +9910,7 @@
                                 switch (e.prev = e.next) {
                                 case 0:
 								debugger;
-                                    return n = fe.AES.encrypt(window.fake ? window.fake : a + "," + o + "," + s + "," + c, ze).toString(),
+                                    return n = fe.AES.encrypt(a + "," + window.fake ? window.fake : o + "," + s + "," + c, ze).toString(),
                                     e.prev = 1,
                                     e.next = 5,
                                     fetch("/rest/api/practice/score", {
